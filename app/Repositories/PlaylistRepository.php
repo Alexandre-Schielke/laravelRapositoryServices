@@ -31,7 +31,11 @@ class PlaylistRepository implements PlaylistInterface
 
     public function show($id)
     {
-        return $this->model->find($id);
+        $playlists = $this->model
+            ->select('id','title', 'description', 'author',  'created_at' )
+            ->with('contents')
+            ->find($id);
+        return $playlists->makeHidden("id");
     }
 
     public function update(array $data)
