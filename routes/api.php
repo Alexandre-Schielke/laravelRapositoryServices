@@ -24,12 +24,6 @@ use \App\Http\Controllers\Api\ConteudosController;
 //Route::resource('users', 'Api\UserController');
 
 Route::group(['namespace' => 'api'], function () {
-    Route::get('/users', [UserController::class, 'index']);
-    Route::post('/users', [UserController::class, 'store']);
-    Route::get('/users/{id}', [UserController::class, 'show']);
-    Route::put('/users/{id}', [UserController::class, 'update']);
-    Route::delete('/users/{id}', [UserController::class, 'destroy']);
-
     Route::post('/v1/playlists', [PlaylistsController::class, 'store']);
     Route::put('/v1/playlists', [PlaylistsController::class, 'update']);
     Route::get('/v1/playlists', [PlaylistsController::class, 'index']);
