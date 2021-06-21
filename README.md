@@ -1,7 +1,7 @@
 <h2>Requisitos para rodar o projeto deste repositório</h2>
 <p>O projeto foi feito em framework laravel 8, para que ele rode temos que seguir os requisitos da própia documentação <a href="https://lumen.laravel.com/docs/8.x"> CLIQE AQUI PARA IR A DOCUMENTAÇÃO</a></p>
 <p>
-	Após clonar o projeto do github (git clone https://) abra a pasta do projeto e rode os seguinte comando dentro do terminal:
+	Após clonar o projeto do github (git clone https://github.com/Schielke-code/challenge-alexandre.git) abra a pasta do projeto e rode os seguinte comando dentro do terminal:
 	<code>composer install</code>
 </p>
 <p>
